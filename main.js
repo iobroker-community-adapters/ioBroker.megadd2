@@ -1563,14 +1563,14 @@ function restApi(req, res) {
             // Try to find name of the instance
             if (parseInt(device, 10) == device) {
                 ///if (values.ib)
-                adapter.sendTo('megadd.' + device, 'send', {pt: parseInt(values.pt, 10), val: values.ib});
+                adapter.sendTo('megadd2.' + device, 'send', {pt: parseInt(values.pt, 10), val: values.ib});
                 ///if (values.wg)
                 ///adapter.sendTo('megadd.' + device, 'send', {pt: parseInt(values.pt, 10), val: values.wg});
                 res.writeHead(200, {'Content-Type': 'text/html'});
                 res.end('OK', 'utf8');
             } else {
                 // read all instances of megaD
-                adapter.getForeignObjects('system.adapter.megadd.*', 'instance', (err, arr) => {
+                adapter.getForeignObjects('system.adapter.megadd2.*', 'instance', (err, arr) => {
                     if (arr) {
                         for (const id in arr) {
                             if (arr[id].native.name === device) {

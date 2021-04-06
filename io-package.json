@@ -1,131 +1,143 @@
 {
-  "common": {
-    "name": "megadd2",
-    "version": "1.0.1",
-    "news": {
-      "1.0.1": {
-        "en": "Refactoring and make compatible with js-controller 3.2.x",
-        "de": "Refactoring und Kompatibilität mit js-controller 3.2.x.",
-        "ru": "Рефакторинг и совместимость с js-controller 3.2.x",
-        "pt": "Refatorar e tornar compatível com js-controller 3.2.x",
-        "nl": "Herstructureren en compatibel maken met js-controller 3.2.x",
-        "fr": "Refactoring et rendre compatible avec js-controller 3.2.x",
-        "it": "Refactoring e rendere compatibile con js-controller 3.2.x",
-        "es": "Refactorización y compatibilidad con js-controller 3.2.x",
-        "pl": "Refaktoryzacja i zgodność z js-controller 3.2.x",
-        "zh-cn": "重构并使其与js-controller 3.2.x兼容"
-      },
-      "0.4.0": {
-        "en": "fix DSen port (W26)",
-        "de": "fix DSen port (W26)",
-        "ru": "fix DSen port (W26)"
-      },
-      "0.3.8": {
-        "en": "add I2C Bus scan for ANY port settings",
-        "de": "add I2C Bus scan for ANY port settings",
-        "ru": "add I2C Bus scan for ANY port settings"
-      },
-      "0.3.5": {
-        "en": "add 1WBUS, Display port settings",
-        "de": "add 1WBUS, Display port settings",
-        "ru": "add 1WBUS, Display port settings"
-      },
-      "0.3.2": {
-        "en": "add DSen port settings (W26)",
-        "de": "add DSen port settings (W26)",
-        "ru": "add DSen port settings (W26)"
-      },
-      "0.3.1": {
-        "en": "small fix",
-        "de": "small fix",
-        "ru": "small fix"
-      },
-      "0.3.0": {
-        "en": "add I2C Bus port expander (MC23008, MC23017, PCA9685)",
-        "de": "add I2C Bus port expander (MC23008, MC23017, PCA9685)",
-        "ru": "add I2C Bus port expander (MC23008, MC23017, PCA9685)"
-      },
-      "0.2.2": {
-        "en": "add display settings (Bright)",
-        "de": "add display settings (Bright)",
-        "ru": "add display settings (Bright)"
-      },
-      "0.2.0": {
-        "en": "add I2C Bus sensor (BMx280)",
-        "de": "add I2C Bus sensor (BMx280)",
-        "ru": "add I2C Bus sensor (BMx280)"
-      }
+    "common": {
+        "name": "megadd2",
+        "version": "1.0.2",
+        "news": {
+            "1.0.2": {
+                "en": "Fixed the sending messages to megadd, instead of megadd2",
+                "de": "Das Senden von Nachrichten an megadd anstelle von megadd2 wurde behoben",
+                "ru": "Исправлена отправка сообщений в мегаддд, а не в мегадд2",
+                "pt": "Corrigido o envio de mensagens para megadd, em vez de megadd2",
+                "nl": "Probleem opgelost met het verzenden van berichten naar megadd in plaats van megadd2",
+                "fr": "Correction de l'envoi de messages à megadd, au lieu de megadd2",
+                "it": "Risolto il problema con l'invio di messaggi a megadd, invece che a megadd2",
+                "es": "Se corrigió el envío de mensajes a megadd, en lugar de megadd2",
+                "pl": "Naprawiono wysyłanie wiadomości do megadd zamiast megadd2",
+                "zh-cn": "固定发送消息为megadd，而不是megadd2"
+            },
+            "1.0.1": {
+                "en": "Refactoring and make compatible with js-controller 3.2.x",
+                "de": "Refactoring und Kompatibilität mit js-controller 3.2.x.",
+                "ru": "Рефакторинг и совместимость с js-controller 3.2.x",
+                "pt": "Refatorar e tornar compatível com js-controller 3.2.x",
+                "nl": "Herstructureren en compatibel maken met js-controller 3.2.x",
+                "fr": "Refactoring et rendre compatible avec js-controller 3.2.x",
+                "it": "Refactoring e rendere compatibile con js-controller 3.2.x",
+                "es": "Refactorización y compatibilidad con js-controller 3.2.x",
+                "pl": "Refaktoryzacja i zgodność z js-controller 3.2.x",
+                "zh-cn": "重构并使其与js-controller 3.2.x兼容"
+            },
+            "0.4.0": {
+                "en": "fix DSen port (W26)",
+                "de": "fix DSen port (W26)",
+                "ru": "fix DSen port (W26)"
+            },
+            "0.3.8": {
+                "en": "add I2C Bus scan for ANY port settings",
+                "de": "add I2C Bus scan for ANY port settings",
+                "ru": "add I2C Bus scan for ANY port settings"
+            },
+            "0.3.5": {
+                "en": "add 1WBUS, Display port settings",
+                "de": "add 1WBUS, Display port settings",
+                "ru": "add 1WBUS, Display port settings"
+            },
+            "0.3.2": {
+                "en": "add DSen port settings (W26)",
+                "de": "add DSen port settings (W26)",
+                "ru": "add DSen port settings (W26)"
+            },
+            "0.3.1": {
+                "en": "small fix",
+                "de": "small fix",
+                "ru": "small fix"
+            },
+            "0.3.0": {
+                "en": "add I2C Bus port expander (MC23008, MC23017, PCA9685)",
+                "de": "add I2C Bus port expander (MC23008, MC23017, PCA9685)",
+                "ru": "add I2C Bus port expander (MC23008, MC23017, PCA9685)"
+            },
+            "0.2.2": {
+                "en": "add display settings (Bright)",
+                "de": "add display settings (Bright)",
+                "ru": "add display settings (Bright)"
+            },
+            "0.2.0": {
+                "en": "add I2C Bus sensor (BMx280)",
+                "de": "add I2C Bus sensor (BMx280)",
+                "ru": "add I2C Bus sensor (BMx280)"
+            }
+        },
+        "title": "MegaD-2561 Adapter",
+        "desc": {
+            "en": "Lets control the MegaD-2561 over ethernet/internet (http://www.ab-log.ru/smart-house/ethernet/megad-2561)",
+            "de": "Ermöglicht die steuerung von MegaD-2561 über Ethernet/Internet (http://www.ab-log.ru/smart-house/ethernet/megad-2561)",
+            "ru": "Позволяет управлять MegaD-2561 через ethernet/интернет (http://www.ab-log.ru/smart-house/ethernet/megad-2561)",
+            "pt": "Vamos controlar o MegaD-2561 pela ethernet / internet (http://www.ab-log.ru/smart-house/ethernet/megad-2561)",
+            "nl": "Laten we de MegaD-2561 besturen via ethernet / internet (http://www.ab-log.ru/smart-house/ethernet/megad-2561)",
+            "fr": "Permet de contrôler le MegaD-2561 via Ethernet / Internet (http://www.ab-log.ru/smart-house/ethernet/megad-2561)",
+            "it": "Consente di controllare MegaD-2561 su ethernet / internet (http://www.ab-log.ru/smart-house/ethernet/megad-2561)",
+            "es": "Controlemos el MegaD-2561 a través de ethernet / internet (http://www.ab-log.ru/smart-house/ethernet/megad-2561)",
+            "pl": "Pozwala kontrolować MegaD-2561 przez Ethernet / Internet (http://www.ab-log.ru/smart-house/ethernet/megad-2561)",
+            "zh-cn": "让我们通过以太网/互联网（http://www.ab-log.ru/smart-house/ethernet/megad-2561）控制MegaD-2561"
+        },
+        "authors": [
+            "ausHaus <teshaus@gmail.com>"
+        ],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "mode": "daemon",
+        "loglevel": "info",
+        "icon": "megadd2.png",
+        "messagebox": true,
+        "compact": true,
+        "readme": "https://github.com/iobroker-community-adapters/ioBroker.megadd2/blob/master/README.md",
+        "keywords": [
+            "MegaD-2561",
+            "communication"
+        ],
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/iobroker-community-adapters/ioBroker.megadd2/master/admin/megadd2.png",
+        "type": "hardware",
+        "localLink": "http://%native_ip%/%password%",
+        "config": {
+            "width": 1050,
+            "height": 800,
+            "minWidth": 600,
+            "minHeight": 500
+        }
     },
-    "title": "MegaD-2561 Adapter",
-    "desc": {
-      "en": "Lets control the MegaD-2561 over ethernet/internet (http://www.ab-log.ru/smart-house/ethernet/megad-2561)",
-      "de": "Ermöglicht die steuerung von MegaD-2561 über Ethernet/Internet (http://www.ab-log.ru/smart-house/ethernet/megad-2561)",
-      "ru": "Позволяет управлять MegaD-2561 через ethernet/интернет (http://www.ab-log.ru/smart-house/ethernet/megad-2561)",
-      "pt": "Vamos controlar o MegaD-2561 pela ethernet / internet (http://www.ab-log.ru/smart-house/ethernet/megad-2561)",
-      "nl": "Laten we de MegaD-2561 besturen via ethernet / internet (http://www.ab-log.ru/smart-house/ethernet/megad-2561)",
-      "fr": "Permet de contrôler le MegaD-2561 via Ethernet / Internet (http://www.ab-log.ru/smart-house/ethernet/megad-2561)",
-      "it": "Consente di controllare MegaD-2561 su ethernet / internet (http://www.ab-log.ru/smart-house/ethernet/megad-2561)",
-      "es": "Controlemos el MegaD-2561 a través de ethernet / internet (http://www.ab-log.ru/smart-house/ethernet/megad-2561)",
-      "pl": "Pozwala kontrolować MegaD-2561 przez Ethernet / Internet (http://www.ab-log.ru/smart-house/ethernet/megad-2561)",
-      "zh-cn": "让我们通过以太网/互联网（http://www.ab-log.ru/smart-house/ethernet/megad-2561）控制MegaD-2561"
+    "native": {
+        "ip": "",
+        "name": "",
+        "port": 80,
+        "pollInterval": 30,
+        "password": "sec",
+        "longPress": 700,
+        "doublePress": 600,
+        "ports": []
     },
-    "authors": [
-      "ausHaus <teshaus@gmail.com>"
-    ],
-    "license": "MIT",
-    "platform": "Javascript/Node.js",
-    "mode": "daemon",
-    "loglevel": "info",
-    "icon": "megadd2.png",
-    "messagebox": true,
-    "compact": true,
-    "readme": "https://github.com/iobroker-community-adapters/ioBroker.megadd2/blob/master/README.md",
-    "keywords": [
-      "MegaD-2561",
-      "communication"
-    ],
-    "enabled": true,
-    "extIcon": "https://raw.githubusercontent.com/iobroker-community-adapters/ioBroker.megadd2/master/admin/megadd2.png",
-    "type": "hardware",
-    "localLink": "http://%native_ip%/%password%",
-    "config": {
-      "width": 1050,
-      "height": 800,
-      "minWidth": 600,
-      "minHeight": 500
-    }
-  },
-  "native": {
-    "ip": "",
-    "name": "",
-    "port": 80,
-    "pollInterval": 30,
-    "password": "sec",
-    "longPress": 700,
-    "doublePress": 600,
-    "ports": []
-  },
-  "instanceObjects": [
-    {
-      "_id": "info",
-      "type": "channel",
-      "common": {
-        "name": "Information"
-      },
-      "native": {}
-    },
-    {
-      "_id": "info.connection",
-      "type": "state",
-      "common": {
-        "role": "indicator.connected",
-        "name": "If connected to MegaD",
-        "type": "boolean",
-        "read": true,
-        "write": false,
-        "def": false
-      },
-      "native": {}
-    }
-  ]
+    "instanceObjects": [
+        {
+            "_id": "info",
+            "type": "channel",
+            "common": {
+                "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "If connected to MegaD",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }
+    ]
 }

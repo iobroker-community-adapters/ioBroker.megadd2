@@ -116,7 +116,7 @@ ioBrokerЗначение = MegaЗначение * Множитель + Сдви�
 -->
 
 ## Changelog
-### __WORK IN PROGRESS__
+### 1.0.2 (2021-04-06)
 * (voronov) Fixed the sending messages to megadd, instead of megadd2
 
 ### 1.0.1 (2021-01-23)

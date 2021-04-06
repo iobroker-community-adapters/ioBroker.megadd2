@@ -109,9 +109,16 @@ ioBrokerЗначение = MegaЗначение * Множитель + Сдви�
 Только аналоговые порты принимают во внимание Множитель и Сдвиг.
 
 **Порядок портов очень важен. Порт в первой колонке таблицы ассоциируется с портом P0 на MegaD-2561. Порт в колонке 14 с P13.**          
-         
-      
+
+<!--
+	Placeholder for the next version (at the beginning of the line):
+	### __WORK IN PROGRESS__
+-->
+
 ## Changelog
+### __WORK IN PROGRESS__
+* (voronov) Fixed the sending messages to megadd, instead of megadd2
+
 ### 1.0.1 (2021-01-23)
 * (bleufox) Refactoring and make compatible with js-controller 3.2.x
 

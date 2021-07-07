@@ -2029,7 +2029,6 @@ function syncObjects() {
                 obj.common.read = true;
                 obj.common.def = 0;
                 obj.common.min = settings.offset;
-                obj.common.max = settings.offset + settings.factor;
                 obj.common.desc = 'P' + p + ' - analog input';
                 obj.common.type = 'number';
                 if (!obj.common.role) obj.common.role = 'value';
@@ -2042,8 +2041,6 @@ function syncObjects() {
                 obj.common.def = 0;
                 obj.common.type = 'number';
                 if (settings.d == 1 || settings.d == 2 || settings.d == 3) {
-                    obj.common.min = -30;
-                    obj.common.max = 30;
                     obj.common.unit = '°C';
                     obj.common.desc = `P${p} - temperature`;
                     obj.common.type = 'number';
@@ -2088,8 +2085,6 @@ function syncObjects() {
                                         read: true,
                                         unit: '°C',
                                         def: 0,
-                                        min: -30,
-                                        max: 30,
                                         desc: 'P' + p + ' - temperature',
                                         type: 'number'
                                     },
@@ -2110,8 +2105,6 @@ function syncObjects() {
                                         read: true,
                                         unit: '°C',
                                         def: 0,
-                                        min: -30,
-                                        max: 30,
                                         desc: 'P' + p + ' - temperature',
                                         type: 'number'
                                     },
@@ -2132,8 +2125,6 @@ function syncObjects() {
                                         read: true,
                                         unit: '°C',
                                         def: 0,
-                                        min: -30,
-                                        max: 30,
                                         desc: 'P' + p + ' - temperature',
                                         type: 'number'
                                     },
@@ -2154,8 +2145,6 @@ function syncObjects() {
                                         read: true,
                                         unit: '°C',
                                         def: 0,
-                                        min: -30,
-                                        max: 30,
                                         desc: 'P' + p + ' - temperature',
                                         type: 'number'
                                     },
@@ -2176,8 +2165,6 @@ function syncObjects() {
                                         read: true,
                                         unit: '°C',
                                         def: 0,
-                                        min: -30,
-                                        max: 30,
                                         desc: 'P' + p + ' - temperature',
                                         type: 'number'
                                     },
@@ -2198,8 +2185,6 @@ function syncObjects() {
                                         read: true,
                                         unit: '°C',
                                         def: 0,
-                                        min: -30,
-                                        max: 30,
                                         desc: 'P' + p + ' - temperature',
                                         type: 'number'
                                     },
@@ -2220,8 +2205,6 @@ function syncObjects() {
                                         read: true,
                                         unit: '°C',
                                         def: 0,
-                                        min: -30,
-                                        max: 30,
                                         desc: 'P' + p + ' - temperature',
                                         type: 'number'
                                     },
@@ -2242,8 +2225,6 @@ function syncObjects() {
                                         read: true,
                                         unit: '°C',
                                         def: 0,
-                                        min: -30,
-                                        max: 30,
                                         desc: 'P' + p + ' - temperature',
                                         type: 'number'
                                     },
@@ -2264,8 +2245,6 @@ function syncObjects() {
                                         read: true,
                                         unit: '°C',
                                         def: 0,
-                                        min: -30,
-                                        max: 30,
                                         desc: 'P' + p + ' - temperature',
                                         type: 'number'
                                     },
@@ -2286,8 +2265,6 @@ function syncObjects() {
                                         read: true,
                                         unit: '°C',
                                         def: 0,
-                                        min: -30,
-                                        max: 30,
                                         desc: 'P' + p + ' - temperature',
                                         type: 'number'
                                     },
@@ -2419,8 +2396,8 @@ function syncObjects() {
                                         read: true,
                                         unit: '°C',
                                         def: 0,
-                                        min: -30,
-                                        max: 30,
+                                        min: -40,
+                                        max: 125,
                                         desc: 'P' + p + ' - temperature',
                                         type: 'number'
                                     },
@@ -2544,8 +2521,8 @@ function syncObjects() {
                                         read: true,
                                         unit: 'kPa',
                                         def: 0,
-                                        min: 0,
-                                        max: 1000,
+                                        min: 300,
+                                        max: 1100,
                                         desc: 'P' + p + ' - pressure',
                                         type: 'number'
                                     },
@@ -2564,8 +2541,8 @@ function syncObjects() {
                                         read: true,
                                         unit: '°C',
                                         def: 0,
-                                        min: -30,
-                                        max: 30,
+                                        min: -40,
+                                        max: 85,
                                         desc: 'P' + p + ' - temperature',
                                         type: 'number'
                                     },
@@ -2586,8 +2563,8 @@ function syncObjects() {
                                         read: true,
                                         unit: 'kPa',
                                         def: 0,
-                                        min: 0,
-                                        max: 1000,
+                                        min: 300,
+                                        max: 1100,
                                         desc: 'P' + p + ' - pressure',
                                         type: 'number'
                                     },
@@ -2606,8 +2583,8 @@ function syncObjects() {
                                         read: true,
                                         unit: '°C',
                                         def: 0,
-                                        min: -30,
-                                        max: 30,
+                                        min: -40,
+                                        max: 85,
                                         desc: 'P' + p + ' - temperature',
                                         type: 'number'
                                     },
@@ -2650,8 +2627,6 @@ function syncObjects() {
                 if (settings.d == 1) {
                     obj.common.write = false;
                     obj.common.read = true;
-                    obj.common.min = -30;
-                    obj.common.max = 30;
                     obj.common.unit = '°C';
                     obj.common.def = 0;
                     obj.common.desc = 'P' + p + ' - temperature';
@@ -2698,8 +2673,8 @@ function syncObjects() {
                     obj.common.write = false;
                     obj.common.read = true;
                     obj.common.def = 0;
-                    obj.common.min = -30;
-                    obj.common.max = 30;
+                    obj.common.min = -40;
+                    obj.common.max = 85;
                     obj.common.unit = '°C';
                     obj.common.desc = 'P' + p + ' - temperature';
                     obj.common.type = 'number';
@@ -2713,8 +2688,8 @@ function syncObjects() {
                             read: true,
                             unit: 'kPa',
                             def: 0,
-                            min: 0,
-                            max: 1000,
+                            min: 300,
+                            max: 1100,
                             desc: 'P' + p + ' - pressure',
                             type: 'number'
                         },
@@ -2728,8 +2703,8 @@ function syncObjects() {
                     obj.common.write = false;
                     obj.common.read = true;
                     obj.common.def = 0;
-                    obj.common.min = -30;
-                    obj.common.max = 30;
+                    obj.common.min = -40;
+                    obj.common.max = 85;
                     obj.common.unit = '°C';
                     obj.common.desc = 'P' + p + ' - temperature';
                     obj.common.type = 'number';
@@ -2743,8 +2718,8 @@ function syncObjects() {
                             read: true,
                             unit: 'kPa',
                             def: 0,
-                            min: 0,
-                            max: 1000,
+                            min: 300,
+                            max: 1100,
                             desc: 'P' + p + ' - pressure',
                             type: 'number'
                         },

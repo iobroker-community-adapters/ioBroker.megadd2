@@ -792,7 +792,7 @@ function main() {
     server.listen(config.port);
     console.log('Server started on port: ' + config.port);
 
-    if (keypress) keypress(process.stdin);
+    keypress && keypress(process.stdin);
 
     // listen for the "keypress" event
     process.stdin.on('keypress', function (ch, key) {
@@ -905,5 +905,5 @@ if (typeof module !== undefined && module.parent) {
     module.exports.trigger = triggerEx;
     module.exports.stop    = stop;
 } else {
-    main();    
+    main();
 }

@@ -1973,14 +1973,14 @@ function syncObjects() {
                     obj.common.type = 'number';
                     obj.common.min = 0;
                     obj.common.max = 255;
-                    if (!obj.common.role) obj.common.role = 'level';
+                    obj.common.role = obj.common.role || 'level';
                 } else if (settings.m == 0 || settings.m == 3) {
                     obj.common.write = true;
                     obj.common.read = true;
                     obj.common.def = false;
                     obj.common.desc = `P${p} - digital output`;
                     obj.common.type = 'boolean';
-                    if (!obj.common.role) obj.common.role = 'state';
+                    obj.common.role = obj.common.role || 'state';
                 } else if (settings.m == 2) {   //DS2413
                     obj = {
                         _id: adapter.namespace + '.' + id + '_A',
@@ -2031,7 +2031,7 @@ function syncObjects() {
                 obj.common.min = settings.offset;
                 obj.common.desc = 'P' + p + ' - analog input';
                 obj.common.type = 'number';
-                if (!obj.common.role) obj.common.role = 'value';
+                obj.common.role = obj.common.role || 'value';
                 obj.native.threshold = settings.offset + settings.factor * settings.misc;
             } else
                 // digital temperature sensor
@@ -2044,7 +2044,7 @@ function syncObjects() {
                     obj.common.unit = '°C';
                     obj.common.desc = `P${p} - temperature`;
                     obj.common.type = 'number';
-                    if (!obj.common.role) obj.common.role = 'value.temperature';
+                    obj.common.role = obj.common.role || 'value.temperature';
 
                     if (settings.d == 1 || settings.d == 2) {
                         obj1 = {
@@ -2631,7 +2631,7 @@ function syncObjects() {
                     obj.common.def = 0;
                     obj.common.desc = 'P' + p + ' - temperature';
                     obj.common.type = 'number';
-                    if (!obj.common.role) obj.common.role = 'value.temperature';
+                    obj.common.role = obj.common.role || 'value.temperature';
                     obj1 = {
                         _id: adapter.namespace + '.' + id + '_humidity',
                         common: {
@@ -2667,7 +2667,7 @@ function syncObjects() {
                     obj.common.desc = 'P' + p + ' - display';
                     obj.common.type = 'string';
                     obj.common.def = '';
-                    if (!obj.common.role) obj.common.role = 'state';
+                    obj.common.role = obj.common.role || 'state';
                     // BMP180
                 } else if (settings.d == 5) {
                     obj.common.write = false;
@@ -2678,7 +2678,7 @@ function syncObjects() {
                     obj.common.unit = '°C';
                     obj.common.desc = 'P' + p + ' - temperature';
                     obj.common.type = 'number';
-                    if (!obj.common.role) obj.common.role = 'value.temperature';
+                    obj.common.role = obj.common.role || 'value.temperature';
                     obj1 = {
                         _id: adapter.namespace + '.' + id + '_pressure',
                         common: {
@@ -2708,7 +2708,7 @@ function syncObjects() {
                     obj.common.unit = '°C';
                     obj.common.desc = 'P' + p + ' - temperature';
                     obj.common.type = 'number';
-                    if (!obj.common.role) obj.common.role = 'value.temperature';
+                    obj.common.role = obj.common.role || 'value.temperature';
                     obj1 = {
                         _id: adapter.namespace + '.' + id + '_pressure',
                         common: {
@@ -3688,7 +3688,7 @@ function main() {
 
             adapter.getPort(adapter.config.port, port => {
                 if (port != adapter.config.port && !adapter.config.findNextPort) {
-                    adapter.log.warn('port ' + adapter.config.port + ' already in use');
+                    adapter.log.warn(`port ${adapter.config.port} already in use`);
                 } else {
                     server.listen(port);
                     adapter.log.info('http server listening on port ' + port);

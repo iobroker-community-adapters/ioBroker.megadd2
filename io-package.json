@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "megadd2",
-        "version": "1.0.2",
+        "version": "1.0.3",
         "news": {
+            "1.0.3": {
+                "en": "Correct min/max initial values for sensors",
+                "de": "Korrekte Min/Max-Anfangswerte für Sensoren",
+                "ru": "Правильные минимальные / максимальные начальные значения для датчиков",
+                "pt": "Valores iniciais mínimo / máximo corretos para sensores",
+                "nl": "Correcte min/max beginwaarden voor sensoren",
+                "fr": "Corriger les valeurs initiales min/max pour les capteurs",
+                "it": "Valori iniziali min/max corretti per i sensori",
+                "es": "Valores iniciales mínimos / máximos correctos para sensores",
+                "pl": "Popraw wartości początkowe min/maks dla czujników",
+                "zh-cn": "修正传感器的最小/最大初始值"
+            },
             "1.0.2": {
                 "en": "Fixed the sending messages to megadd, instead of megadd2",
                 "de": "Das Senden von Nachrichten an megadd anstelle von megadd2 wurde behoben",
